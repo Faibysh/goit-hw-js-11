@@ -10,6 +10,7 @@ let hits = {};
 let perPage = 40;
 let queryPage = 1;
 let searchQuery = '';
+let lightbox;
 
 async function onSearch(e) {
   e.preventDefault();
@@ -53,7 +54,7 @@ async function getQuery() {
     );
 
     gallery.insertAdjacentHTML('beforeend', markUp);
-    const lightbox = new SimpleLightbox('.photo-link', {
+    lightbox = new SimpleLightbox('.photo-link', {
       captions: true,
       captionsData: 'alt',
       captionDelay: 250,
