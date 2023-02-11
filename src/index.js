@@ -1,7 +1,7 @@
 import SimpleLightbox from 'simplelightbox';
 import 'simplelightbox/dist/simple-lightbox.min.css';
 import Notiflix from 'notiflix';
-import api from './getImages.js';
+import api from './getImages';
 
 const form = document.querySelector('.search-form');
 const gallery = document.querySelector('.gallery');
